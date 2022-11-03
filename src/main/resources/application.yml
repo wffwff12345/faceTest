@@ -14,3 +14,9 @@ mybatis-plus:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     map-underscore-to-camel-case: true
   mapper-locations: classpath*:mapper/*.xml
+#aipFace:
+#  appId: 28208907
+#  apiKey: LGpL5SWmL01WRcMcOmvzXyDx
+#  secretKey: VHmutq14cmEMw1qXK7OvdzlFPjwp6j7H
+#  groupId: test
+#  imageType: BASE64
