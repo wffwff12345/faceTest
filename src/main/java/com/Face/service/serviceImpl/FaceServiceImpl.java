@@ -6,7 +6,6 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 
@@ -16,17 +15,24 @@ import java.util.HashMap;
 @Service
 @PropertySource("config.properties")
 public class FaceServiceImpl implements FaceService {
+
     @Value("${aipFace.appId}")
     private String appId;
+
     @Value("${aipFace.apiKey}")
     private String apiKey;
+
     @Value("${aipFace.secretKey}")
     private String secretType;
+
     @Value("${aipFace.imageType}")
     private String imageType;
+
     @Value("${aipFace.groupId}")
     private String groupId;
+
     private HashMap<String, String> map = new HashMap<>();
+
     private AipFace aipFace;
 
     public FaceServiceImpl() {
@@ -58,6 +64,7 @@ public class FaceServiceImpl implements FaceService {
         } else {
             return "失败";
         }
+
     }
 
     @Override
